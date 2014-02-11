@@ -425,3 +425,1085 @@ Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 13:06:02 -050
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 13:06:02 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:43:13 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (1.0ms)[0m  SELECT "movies".* FROM "movies"
+  Rendered movies/index.html.erb within layouts/application (42.0ms)
+Completed 500 Internal Server Error in 103ms
+
+ActionView::Template::Error (undefined local variable or method `movies' for #<#<Class:0x47384a0>:0x4737cd8>):
+    1: <h1><%= pluralize(movies.count, 'movie')%></h1>
+    2: 
+    3: <% @movies.each do |movie| %>
+    4:   <article>
+  app/views/movies/index.html.erb:1:in `_app_views_movies_index_html_erb__106431196_31929156'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:43:28 -0500
+Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 15ms
+
+ActionView::Template::Error (undefined local variable or method `movies' for #<#<Class:0x47384a0>:0x3cf7830>):
+    1: <h1><%= pluralize(movies.count(), 'movie')%></h1>
+    2: 
+    3: <% @movies.each do |movie| %>
+    4:   <article>
+  app/views/movies/index.html.erb:1:in `_app_views_movies_index_html_erb__106431196_31982724'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (33.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (5.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 88ms (Views: 83.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:43:46 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:44:03 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:46:00 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `description' for nil:NilClass):
+     6:       <h2><%= movie.title %></h2>
+     7:     </header>
+     8:     <p>
+     9:       <%= truncate(@movie.description, length:40, seperator: '')%>
+    10:     </p>
+    11:     <table>
+    12:       <tr>
+  app/views/movies/index.html.erb:9:in `block in _app_views_movies_index_html_erb__106431196_31119300'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31119300'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:16 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:26 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:46:34 -0500
+  [1m[36mMovie Load (10.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:54 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:58 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:49:59 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:50:00 -0500
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (17.0ms)[0m  [1mUPDATE "movies" SET "released_on" = ?, "updated_at" = ? WHERE "movies"."id" = 1[0m  [["released_on", Sat, 02 Feb 2002], ["updated_at", Tue, 11 Feb 2014 19:50:29 UTC +00:00]]
+  [1m[35m (6.0ms)[0m  commit transaction
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "movies" SET "released_on" = ?, "updated_at" = ? WHERE "movies"."id" = 2[0m  [["released_on", Mon, 03 Mar 2003], ["updated_at", Tue, 11 Feb 2014 19:50:48 UTC +00:00]]
+  [1m[35m (6.0ms)[0m  commit transaction
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mUPDATE "movies" SET "released_on" = ?, "updated_at" = ? WHERE "movies"."id" = 3[0m  [["released_on", Sun, 04 Apr 2004], ["updated_at", Tue, 11 Feb 2014 19:50:59 UTC +00:00]]
+  [1m[35m (5.0ms)[0m  commit transaction
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mMovie Load (0.0ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "movies" SET "released_on" = ?, "updated_at" = ? WHERE "movies"."id" = 4  [["released_on", Thu, 05 May 2005], ["updated_at", Tue, 11 Feb 2014 19:51:14 UTC +00:00]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 14:51:16 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 14:51:16 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 14:51:16 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 14:51:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 14:51:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 14:51:16 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 14:51:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 14:51:17 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:07:20 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    11:     <table>
+    12:       <tr>
+    13:         <th>Released:</th>
+    14:         <td><%= movie.released_on time_ago_in_words(movie.released_on)%> ago</td>
+    15:       </tr>
+    16:       <tr>
+    17:         <th>Rating:</th>
+  app/views/movies/index.html.erb:14:in `block in _app_views_movies_index_html_erb__106431196_31950984'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31950984'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (25.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 23ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:19 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:40 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:08:52 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:09:41 -0500
+
+SyntaxError (C:/Projects/rails_studio/flix/app/helpers/movies_helper.rb:5: syntax error, unexpected $end, expecting keyword_end):
+  app/controllers/application_controller.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:1:in `<top (required)>'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (31.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:11:13 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (34.0ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (wrong number of arguments (1 for 0)):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie.total_gross) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:2:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_36796692'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_36796692'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:12:15 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (24.0ms)
+Completed 500 Internal Server Error in 34ms
+
+ActionView::Template::Error (undefined method `total_gross' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie.total_gross) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_36796692'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_36796692'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:12:54 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (22.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `total_gross' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie.total_gross) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_36796692'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_36796692'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (13.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (34.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:12:55 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined method `total_gross' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie.total_gross) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_36796692'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_36796692'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:13:18 -0500
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "released_on", "title", "total_gross", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Tue, 11 Feb 2014 20:15:49 UTC +00:00], ["description", "Patience Philips has a more than respectable career as a graphic designer"], ["rating", "PG-13"], ["released_on", Fri, 23 Jul 2004], ["title", "Catwoman"], ["total_gross", #<BigDecimal:32bfa10,'0.4E8',9(36)>], ["updated_at", Tue, 11 Feb 2014 20:15:49 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  commit transaction
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:17:28 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 32ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_31976640'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31976640'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:18:49 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (21.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_31976640'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31976640'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (23.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 43ms (Views: 36.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:32 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 51ms (Views: 46.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:19:52 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:20:49 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 30ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_31976640'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31976640'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:23:49 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (31.0ms)
+Completed 500 Internal Server Error in 40ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_31976640'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31976640'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:23:51 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_31976640'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31976640'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:23:52 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td><%= format_total_gross(movie) %></td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_31976640'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_31976640'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (22.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:24:15 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (7.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td> <%= format_total_gross(movie)%> </td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__106431196_32041596'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__106431196_32041596'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:25:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (55.0ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (undefined method `<' for nil:NilClass):
+    19:       </tr>
+    20:       <tr>
+    21:         <th>Total Gross:</th>
+    22:         <td> <%= format_total_gross(movie)%> </td>
+    23:       </tr>
+    24:     </table>
+    25:   </article>
+  app/helpers/movies_helper.rb:3:in `format_total_gross'
+  app/views/movies/index.html.erb:22:in `block in _app_views_movies_index_html_erb__282166231_35400840'
+  app/views/movies/index.html.erb:3:in `_app_views_movies_index_html_erb__282166231_35400840'
+
+
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.0ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 102ms (Views: 96.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:15 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 54ms (Views: 47.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:25:26 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (42.0ms)
+Completed 200 OK in 63ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:16 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 41ms (Views: 35.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:33 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (34.0ms)
+Completed 200 OK in 52ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:27:41 -0500
+
+
+Started GET "/movies" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "movies"
+  [1m[36mMovie Load (0.0ms)[0m  [1mSELECT "movies".* FROM "movies"[0m
+  Rendered movies/index.html.erb within layouts/application (35.0ms)
+Completed 200 OK in 168ms (Views: 136.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
+
+
+Started GET "/assets/movies.css?body=1" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
+
+
+Started GET "/assets/movies.js?body=1" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-02-11 15:31:17 -0500
